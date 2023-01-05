@@ -1,0 +1,22 @@
+# Assignment_Console_Menu
+
+# sql query
+
+CREATE DATABASE IF NOT EXISTS assignmentdb;
+
+use assignmentdb;
+ 
+DROP TABLE IF EXISTS student;
+ 
+CREATE TABLE student(
+	sid int NOT NULL AUTO_INCREMENT,
+	sname varchar(20),
+	saddr varchar(20),
+	sgender varchar(20),
+	sdob date,
+    PRIMARY KEY(sid)
+);
+
+INSERT INTO student (sname, saddr, sgender, sdob) VALUES ('dhone', '431 Rockwell Rd', 'male', '1992-04-15');
+INSERT INTO student (sname, saddr, sgender, sdob) VALUES ('netin', '9499 North Rockland Court ', 'male', '1993-01-29');
+INSERT INTO student (sname, saddr, sgender, sdob) VALUES ('djaula', '84 Maiden Avenue', 'female', '1995-10-22');
